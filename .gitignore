@@ -25,3 +25,6 @@ Release/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Agent config (local only)
+.agents/
