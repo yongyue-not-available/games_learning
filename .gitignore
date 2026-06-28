@@ -1,0 +1,27 @@
+# Visual Studio generated files
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.db
+*.opendb
+*.ipch
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+*.obj
+*.pdb
+*.exe
+*.ilk
+*.log
+*.tlog
+*.idb
+*.pch
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
