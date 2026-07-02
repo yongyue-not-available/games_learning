@@ -7,22 +7,22 @@
 #include "status_bar.h"
 #include "scene_manager.h"
 
-extern IMAGE img_sky; // 天空图片
-extern IMAGE img_hills; // 山脉图片
-extern IMAGE img_platform_large; // 大型平台图片
-extern IMAGE img_platform_small; // 小型平台图片
+extern IMAGE img_sky; // 澶╃┖鍥剧墖
+extern IMAGE img_hills; // 灞辫剦鍥剧墖
+extern IMAGE img_platform_large; // 澶у瀷骞冲彴鍥剧墖
+extern IMAGE img_platform_small; // 灏忓瀷骞冲彴鍥剧墖
 
-extern IMAGE img_1P_winner; // 1P 获胜文本图片
-extern IMAGE img_2P_winner; // 2P 获胜文本图片
-extern IMAGE img_winner_bar; // 获胜玩家背景文本图片
+extern IMAGE img_1P_winner; // 1P 鑾疯儨鏂囨湰鍥剧墖
+extern IMAGE img_2P_winner; // 2P 鑾疯儨鏂囨湰鍥剧墖
+extern IMAGE img_winner_bar; // 鑾疯儨鐜╁鑳屾櫙鏂囨湰鍥剧墖
 
 extern Camera main_camera;
 extern SceneManager scene_manager;
 
 extern std::vector<Platform> platforms;
 
-extern Player* player_1; // 1P 玩家对象
-extern Player* player_2; // 2P 玩家对象
+extern Player* player_1; // 1P 鐜╁瀵硅薄
+extern Player* player_2; // 2P 鐜╁瀵硅薄
 
 extern IMAGE* img_player_1_avatar;
 extern IMAGE* img_player_2_avatar;
@@ -151,8 +151,8 @@ public:
 		status_bar_p2.set_mp(player_2->get_mp());
 
 		if (is_game_over) {
-			pos_img_winner_bar.x = (int)(speed_winner_bar * delta);
-			pos_img_winner_text.x = (int)(speed_winner_text * delta);
+			pos_img_winner_bar.x += (int)(speed_winner_bar * delta);
+			pos_img_winner_text.x += (int)(speed_winner_text * delta);
 
 			if (!is_slide_out_start) {
 				timer_winner_slide_in.on_update(delta);
